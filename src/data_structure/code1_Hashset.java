@@ -8,7 +8,7 @@ class code1_Hashset {
 	public static void main(String[] args) {
 		System.out.println("Hashset test");
 		//해시는 중복된 값을 저장하지 않는다.
-		int[] arr1= {1,2,30,5,4,7,8,10,2,9,10,11,21,20};
+		int[] arr1= {1,2,30,5,4,7,8,10,2,9,10,11,21,20,18};
 		Object[] arr;
 		Set set = new HashSet();
 		Set set2 = new LinkedHashSet();
@@ -35,6 +35,18 @@ class code1_Hashset {
 		//배열로 변환
 		arr = set.toArray();
 		System.out.println(Arrays.toString(arr));
+		
+		//set엔 get이없다 이터레이터로 받아 값을 찾을 수있다.
+		Iterator it = set.iterator();
+		
+		while(it.hasNext()) {
+			int temp = (int)it.next();
+			System.out.println(temp);
+			if (temp==18) {
+				System.out.println("찾았다! " + temp);
+				break;
+			}
+		}
 	}
 }
 

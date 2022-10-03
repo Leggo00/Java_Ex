@@ -1,4 +1,4 @@
-package coding;
+package data_structure;
 
 
 import java.util.*;

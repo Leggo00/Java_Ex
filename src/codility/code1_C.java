@@ -15,7 +15,7 @@ num	return
 
 import java.util.Arrays;
 
-import coding.Solution;
+import six.Solution;
 
 class code1_C {
 	public static void main(String[] args) {
